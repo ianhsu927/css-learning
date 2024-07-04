@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script></script>
+  </head>
+  <body>
+    <button class="cancel">Cancel</button>
+    <button class="ok">OK</button>
+    <div>
+      <p>Your username:</p>
+      <input type="text" required class="callout" />
+    </div>
+    <script>
+      const ele = document.getElementsByClassName("callout");
+      if (ele) {
+        ele.item(0).before("Please enter your username:");
+      }
+    </script>
+  </body>
+</html>
